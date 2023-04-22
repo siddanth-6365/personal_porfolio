@@ -32,7 +32,7 @@ const Projects = () => {
     return (
         <>
 
-            <div className="w-screen flex flex-col justify-center">
+            <div className="w-screen h-auto flex flex-col justify-center ">
                 <div className="text-center" id='project-area' >
                     <h1 class="text-5xl  font-bold leading-tight text-center tracking-tight  text-gray-900 max-sm:text-3xl dark:text-white">
                         <p class="underline-effect" href="#">
@@ -53,10 +53,10 @@ const Projects = () => {
 
                             {/* netflix pro div  */}
                             <div class="md:flex  items-center mx-10 lg:mx-0">
-                                <div class="w-full   ">
+                                <div class="w-full">
                                     <div class="img-div relative">
                                         <a href='https://bquh2t-3000.csb.app/' target="_blank" rel="noreferrer noopener">
-                                            <img src={require("./assets/proimg1.png")} style={styleimg} class="pro1-img w-full relative z-10" alt="" />
+                                            <img src={require("./assets/proimg1.png")} class="pro1-img w-full relative z-10" alt="" />
                                         </a>
                                     </div>
                                 </div>
@@ -96,7 +96,7 @@ const Projects = () => {
                                 <div class="w-full ">
                                     <div class="img-div relative">
                                         <a href='https://bquh2t-3000.csb.app/' target="_blank" rel="noreferrer noopener">
-                                            <img src={require("./assets/proimg2.png")} style={styleimg} class="pro1-img w-full relative z-10" alt="" />
+                                            <img src={require("./assets/proimg2.png")} class="pro2-img w-full relative z-10" alt="" />
                                         </a>
                                     </div>
                                 </div>

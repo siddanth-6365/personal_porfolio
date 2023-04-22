@@ -364,7 +364,7 @@ code {
 .card4:hover {
   cursor: pointer;
   scale: 1.1;
-  background-color: #8c9eff;
+  background-color: #0070ef;
 }
 
 .card4:hover .discord {
@@ -452,10 +452,17 @@ code {
 
 
 
+.pro1-img {
+  scale: 1.5;
+}
 
-/* .project-div {
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  
-} */
+.pro2-img {
+  scale: 1.1;
+}
+
+
+.imgpro1 {
+  /* zoom: 2; */
+  scale: 1.6;
+}
+

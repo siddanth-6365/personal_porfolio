@@ -4,7 +4,10 @@ import { useRef } from 'react';
 import emailjs from 'emailjs-com';
 
 
-
+const iconstyle = {
+    width: "60px",
+    height: "60px"
+}
 
 const Form = (props) => {
 
@@ -21,7 +24,7 @@ const Form = (props) => {
                 console.log(error.text);
                 alert("failed to send message , please contact email:siddanthe.edu@gmail.com ");
             });
-           
+
     }
 
 
@@ -707,7 +710,14 @@ const Form = (props) => {
                 </div>
             </div>
 
-
+            <div className="flex justify-center bottom-0 right-0 ">
+                <a href='#' ><lord-icon
+                    src="https://cdn.lordicon.com/xdakhdsq.json"
+                    trigger="loop"
+                    style={iconstyle}>
+                </lord-icon>
+                </a>
+            </div>
 
         </>
     )
