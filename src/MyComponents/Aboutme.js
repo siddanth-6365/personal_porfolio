@@ -63,7 +63,7 @@ const AboutSection = () => {
                 Web Developer
               </h3>
               <p class="text-lg font-normal text-gray-500 dark:text-gray-400">
-              I have been actively learning web development for the past few months.
+                I have been actively learning web development for the past few months.
               </p>
             </div>
 
@@ -82,15 +82,15 @@ const AboutSection = () => {
                 Learner
               </h3>
               <p class="text-lg font-normal text-gray-500 dark:text-gray-400">
-              As iam student I have been upskilling myself and exploring in new things
+                As iam student I have been upskilling myself and exploring in new things
               </p>
             </div>
           </div>
         </div>
       </body>
- {/* fixed div  */}
+      {/* fixed div  */}
 
-            {/* <div class="flex sticky items-end justify-end bottom-0 right-0 mr-4 mb-5 z-10">
+      {/* <div class="flex sticky items-end justify-end bottom-0 right-0 mr-4 mb-5 z-10">
                 <div>
                     <a href='#'  >   <lord-icon
                            src="https://cdn.lordicon.com/albqovim.json"
