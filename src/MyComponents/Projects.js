@@ -74,7 +74,7 @@ const Projects = () => {
                                     </div>
                                     <div>
                                         <div>
-                                            <div class="inline-block align-bottom">
+                                            <div class="inline-block flex justify-center align-bottom">
                                                 <a href="https://github.com/siddanth-6365/netflix_clone_basic" target="_blank" rel="noreferrer noopener" class="transition-transform transform hover:scale-125">
                                                     <span class="sr-only">Github</span>
                                                     <svg aria-hidden="true" class="w-8 h-8 text-black" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -95,7 +95,7 @@ const Projects = () => {
                             <div class="md:flex items-center " >
                                 <div class="w-full ">
                                     <div class="img-div relative">
-                                        <a href='https://bquh2t-3000.csb.app/' target="_blank" rel="noreferrer noopener">
+                                        <a href='https://siddanth-6365.github.io/Todo-List_react/' target="_blank" rel="noreferrer noopener">
                                             <img src={require("./assets/proimg2.png")} class="pro2-img w-full relative z-10" alt="" />
                                         </a>
                                     </div>
@@ -117,9 +117,9 @@ const Projects = () => {
                                             In this project in react js i have used JavaScript XML (JSX) , for styling i used bootstrap a CSS framework and for storage i have used a localStorage concept in js which allow you to store and access data without expiration.</p>
                                     </div>
 
-                                    <div class="inline-block align-bottom">
-                                        <a href="https://github.com/siddanth-6365/Todo-List_react" target="_blank" class="transition-transform transform hover:scale-125">
-                                            <span class="sr-only">Github</span>
+                                    <div class="inline-block flex justify-center align-bottom">
+                                        <a href="https://github.com/siddanth-6365/Todo-List_react" target="_blank" rel="noreferrer noopener" class="transition-transform transform hover:scale-125">
+
                                             <svg
                                                 aria-hidden="true"
                                                 class="w-8 h-8 text-black"

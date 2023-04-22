@@ -30,7 +30,7 @@ const Header = () => {
             >
               <span class="front">
                 {" "}
-                <a href="https://drive.google.com/file/d/1pe4AuC5jLmBRrsi_f-wb7-d_0ndfSgVm/view">
+                <a href="https://drive.google.com/file/d/1pe4AuC5jLmBRrsi_f-wb7-d_0ndfSgVm/view?usp=drivesdk" target="_blank" >
                   {" "}
                   Resume{" "}
                 </a>{" "}
