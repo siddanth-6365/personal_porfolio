@@ -19,8 +19,11 @@ const Header = () => {
               alt="Bordered avatar"
             />
 
-            <span className="self-center text-2xl font-semibold whitespace-nowrap text-blue-700 dark:text-white">
+            <span className="logo-name self-center text-2xl md:text-xl font-semibold whitespace-nowrap text-blue-700 dark:text-white">
+              <span> &lt; </span>
               Siddanth Reddy
+              <span> /&gt;  </span>
+
             </span>
           </a>
           <div className="flex md:order-2">

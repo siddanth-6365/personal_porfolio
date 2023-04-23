@@ -1,6 +1,7 @@
 import React from "react";
 import lottie from 'lottie-web';
 import { defineElement } from 'lord-icon-element';
+import "animate.css"
 
 // define "lord-icon" custom element with default properties
 defineElement(lottie.loadAnimation);
@@ -16,15 +17,18 @@ const fixediconstyle = {
   height: "60px"
 }
 
+
+
 const AboutSection = () => {
   return (
     <>
 
-      <body class="bg-white  antialiased" id="about-div" >
-        <div class="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
-          <div class="max-w-2xl mx-auto text-center">
-            <h1 class="text-5xl font-extrabold leading-tight tracking-tight  text-gray-900 sm:text-4xl dark:text-white">
-              <a className="underline-effect" href="#about">About Me</a>
+      <body class="  antialiased" id="about-div" >
+        <div class="max-w-screen-xl px-4 py-8 mx-auto   lg:px-6 sm:py-16 lg:py-24"  >
+          <div  class="max-w-2xl   mx-auto text-center">
+            <h1 class="text-5xl font-extrabold leading-tight tracking-tight   sm:text-4xl dark:text-white">
+              <a className="underline-effect" href="#about" >
+                <div className="text-[#f7137e]" >About Me</div> </a>
             </h1>
           </div>
 
@@ -40,7 +44,7 @@ const AboutSection = () => {
               >
               </lord-icon>
 
-              <h3 class="text-2xl font-bold leading-tight text-gray-900 dark:text-white">
+              <h3 class="text-2xl  font-bold leading-tight ">
                 Student
               </h3>
               <p class="text-lg font-normal text-gray-500 dark:text-gray-400">

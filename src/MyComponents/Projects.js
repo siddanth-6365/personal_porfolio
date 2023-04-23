@@ -39,7 +39,7 @@ const Projects = () => {
                             Projects
                         </p>
                     </h1>
-                    <p className='text-blue-700 font-semibold text-xl mt-4 mb-2'> Here you will find some of the personal and clients projects that I created with each project containing its own case study </p>
+                    <p className='text-blue-700 font-semibold text-xl mt-4 mb-2'> Here you will find some of the personal and clients projects that I have created </p>
                     <br></br>
                 </div>
 

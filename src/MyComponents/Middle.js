@@ -1,23 +1,29 @@
 import React from "react";
 import 'animate.css';
+import Header from "./Header";
 
 const style1 = {
-    position: "relative",
-    left: "60px",
+  
+  
+   
 };
+const namestyle = {
+  
+}
 
 const Middle = () => {
     return (
         <>
 
 
-            <div class="middle grid  h-screen">
-                <div className="flex">
-                    <div class="w-1/2 flex items-center  justify-center">
-                        <div class="card w-2/3 p-10 mr-3   " style={style1}>
+            <div class="middle grid w-screen  h-screen  ">
+
+                <div className="flex w-screen md:flex-row">
+                    <div class="intro-div flex w-1/2 items-center  justify-center">
+                        <div class="card w-2/3 p-10 mr-3   " >
                             <div className="card__content flex flex-col justify-start items-center">
                                 <h1 class="heading-span animate__animated animate__flash  text-2xl font-bold mb-4 text-center">
-                                    <span class="nameclass">HEY, I'M SIDDANTH REDDY</span>
+                                    <span class="nameclass "  >HEY, I'M SIDDANTH REDDY</span>
                                 </h1>
                                 <p class="text-md font-mono text-blue-500 mb-6 text-center mt-3">
                                     I design and code beautifully simple things, and I love what I do.
@@ -96,15 +102,13 @@ const Middle = () => {
                                         </a>
                                     </div>
                                 </div>
-
-
                             </div>
                         </div>
 
                     </div>
 
-                    <div class="img-div w-1/2 flex justify-center items-center">
-                        <div class="svg-div w-1/3 h-1/2 animate__animated  animate__backInRight absolute">
+                    <div class="img-div-1 w-1/2 flex justify-center items-center">
+                        <div class="svg-div w-1/3 h-1/2 animate__animated  animate__backInRight ">
                             <img src={require('./assets/Boy attending online classes - 2004x1500.png')} alt="web designer" class="w-full h-full  mx-auto" />
 
                         </div>
