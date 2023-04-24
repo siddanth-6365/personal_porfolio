@@ -125,7 +125,6 @@ code {
 @media only screen and (max-width: 700px) {
   
   body {
-  
     overflow-y: auto;
   scrollbar-gutter: stable;
   }
@@ -176,6 +175,8 @@ code {
   .card {
     height: 500px;
     width: 360px;
+    position: relative;
+    top: 20%;
   }
 
   .intro-div {
@@ -199,6 +200,10 @@ code {
   }
 .card-2 {
   
+}
+
+.scroll-downs {
+ 
 }
  
 
@@ -407,9 +412,9 @@ code {
 }
 
 .scroll-downs {
-  position: absolute;
+  /* position: absolute;
   bottom: 20px;
-  left: 50%;
+  left: 50%; */
 
   margin: auto;
   width: 34px;
@@ -464,3 +469,12 @@ code {
   scale: 1.6;
 }
 
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+
+a {
+	text-decoration: none;
+}

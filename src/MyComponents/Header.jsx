@@ -1,16 +1,28 @@
 import React from "react";
 import "flowbite";
-
-console.log(window.innerHeight);
+import { useState, useEffect } from "react";
 
 const Header = () => {
+  const [navbar, setNavbar] = useState(
+    "bg-white fixed  bottom-0  w-full z-20 shadow-2xl left-0"
+  );
+
+  useEffect(() => {
+    changeBackground();
+
+    window.addEventListener("scroll", changeBackground);
+  });
+  const changeBackground = () => {
+    console.log(window.scrollY);
+    if (window.scrollY >= 680) {
+      setNavbar("bg-white fixed  top-0  w-full z-20 shadow-2xl left-0");
+    } else {
+      setNavbar("bg-white   bottom-0  w-full z-20 shadow-2xl left-0");
+    }
+  };
   return (
     <>
-      <nav
-        className={
-          " bg-white dark:bg-gray-900 sticky top-0 w-full z-20 shadow-2xl left-0 border-b border-gray-200 dark:border-gray-600"
-        }
-      >
+      <nav className={navbar}>
         <div className="max-w-screen-xl  flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="#" className="flex items-center">
             <img
@@ -20,10 +32,9 @@ const Header = () => {
             />
 
             <span className="logo-name self-center text-2xl md:text-xl font-semibold whitespace-nowrap text-blue-700 dark:text-white">
-              <span> &lt; </span>
+              <span> &lt;</span>
               Siddanth Reddy
-              <span> /&gt;  </span>
-
+              <span>/&gt; </span>
             </span>
           </a>
           <div className="flex md:order-2">
@@ -33,7 +44,10 @@ const Header = () => {
             >
               <span class="front">
                 {" "}
-                <a href="https://drive.google.com/file/d/1pe4AuC5jLmBRrsi_f-wb7-d_0ndfSgVm/view?usp=drivesdk" target="_blank" >
+                <a
+                  href="https://drive.google.com/file/d/1pe4AuC5jLmBRrsi_f-wb7-d_0ndfSgVm/view?usp=drivesdk"
+                  target="_blank"
+                >
                   {" "}
                   Resume{" "}
                 </a>{" "}

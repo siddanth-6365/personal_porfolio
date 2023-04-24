@@ -2,6 +2,8 @@ import React from "react";
 import lottie from 'lottie-web';
 import { defineElement } from 'lord-icon-element';
 import "animate.css"
+import Skillslist from "./Skillslist";
+
 
 // define "lord-icon" custom element with default properties
 defineElement(lottie.loadAnimation);
@@ -91,6 +93,7 @@ const AboutSection = () => {
             </div>
           </div>
         </div>
+<Skillslist/>
       </body>
       {/* fixed div  */}
 
