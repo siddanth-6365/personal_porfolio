@@ -14,15 +14,17 @@ function App() {
   return (
     <>
 
+      <Header />
+
       <Middle />
-      {/* <Header /> */}
-      
+
       <Aboutme />
-     
+
       <Projects />
-     
-      <Form  />
-{/* <BottomNavbar /> */}
+
+      <Form />
+
+      {/* <BottomNavbar /> */}
     </>
   );
 }

@@ -36,10 +36,10 @@ const Projects = () => {
                 <div className="text-center" id='project-area' >
                     <h1 class="text-5xl  font-bold leading-tight text-center tracking-tight  text-gray-900 max-sm:text-3xl dark:text-white">
                         <p class="underline-effect" href="#">
-                            Projects
+                          <span className='text-gray-200'> Projects </span> 
                         </p>
                     </h1>
-                    <p className='text-blue-700 font-semibold text-xl mt-4 mb-2'> Here you will find some of the personal and clients projects that I have created </p>
+                    <p className='text-blue-600 font-semibold text-xl mt-4 mb-2'> Here you will find some of the personal and clients projects that I have created </p>
                     <br></br>
                 </div>
 

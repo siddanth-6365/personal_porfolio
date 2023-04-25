@@ -28,9 +28,10 @@ const AboutSection = () => {
       <body class="  antialiased" id="about-div" >
         <div class="max-w-screen-xl px-4 py-8 mx-auto   lg:px-6 sm:py-16 lg:py-24"  >
           <div  class="max-w-2xl   mx-auto text-center">
-            <h1 class="text-5xl font-extrabold leading-tight tracking-tight   sm:text-4xl dark:text-white">
+            <h1 class="text-5xl font-extrabold leading-tight tracking-tight   sm:text-4xl ">
               <a className="underline-effect" href="#about" >
-                <div className="text-[#f7137e]" >About Me</div> </a>
+                <span className="text-gray-300" >About Me </span>
+                </a>
             </h1>
           </div>
 
@@ -46,10 +47,10 @@ const AboutSection = () => {
               >
               </lord-icon>
 
-              <h3 class="text-2xl  font-bold leading-tight ">
+              <h3 class="text-2xl text-white  font-bold leading-tight ">
                 Student
               </h3>
-              <p class="text-lg font-normal text-gray-500 dark:text-gray-400">
+              <p class="text-lg font-normal text-gray-400 ">
                 A undergrate at JIIT Noida
               </p>
             </div>
@@ -65,10 +66,10 @@ const AboutSection = () => {
               >
               </lord-icon>
 
-              <h3 class="text-2xl font-bold leading-tight text-gray-900 dark:text-white">
+              <h3 class="text-2xl text-white font-bold leading-tight  ">
                 Web Developer
               </h3>
-              <p class="text-lg font-normal text-gray-500 dark:text-gray-400">
+              <p class="text-lg font-normal text-gray-400 dark:text-gray-400">
                 I have been actively learning web development for the past few months.
               </p>
             </div>
@@ -84,10 +85,10 @@ const AboutSection = () => {
                 style={iconstyle}
               >
               </lord-icon>
-              <h3 class="text-2xl font-bold leading-tight text-gray-900 dark:text-white">
+              <h3 class="text-2xl font-bold leading-tight text-white">
                 Learner
               </h3>
-              <p class="text-lg font-normal text-gray-500 dark:text-gray-400">
+              <p class="text-lg font-normal text-gray-400 dark:text-gray-400">
                 As iam student I have been upskilling myself and exploring in new things
               </p>
             </div>

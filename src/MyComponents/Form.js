@@ -6,7 +6,11 @@ import emailjs from 'emailjs-com';
 
 const iconstyle = {
     width: "60px",
-    height: "60px"
+    height: "60px",
+}
+const iconstyle2 = {
+    width: "30px",
+    height: "30px",
 }
 
 const Form = (props) => {
@@ -674,8 +678,8 @@ const Form = (props) => {
                 <div class="w-full md:w-1/2 h-1/2 grid justify-center p-2">
                     <section class=" -900">
                         <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-                            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-blue-700  ">Send me a message!</h2>
-                            <p class="mb-8 lg:mb-16 font-light text-center text-gray-500   sm:text-xl">Got a question or proposal, or just want
+                            <h2 class="mb-4 text-5xl tracking-tight font-extrabold text-center text-blue-700  ">Send me a message!</h2>
+                            <p class="mb-8 lg:mb-16 font-light text-center text-gray-300   sm:text-xl">Got a question or proposal, or just want
                                 to say hello? Go ahead.</p>
 
                             <form action="#" ref={form} onSubmit={sendEmail} class="space-y-6">
@@ -710,13 +714,21 @@ const Form = (props) => {
                 </div>
             </div>
 
-            <div className="flex justify-center bottom-0 right-0 ">
-                <a href='#' ><lord-icon
-                    src="https://cdn.lordicon.com/xdakhdsq.json"
-                    trigger="loop"
-                    style={iconstyle}>
-                </lord-icon>
-                </a>
+
+
+            <div className="text-gray-300 mb-3   ">
+                <div className="flex items-end justify-center">
+                    <a href='#'>
+                    <i class='fas fa-angle-double-up' ></i>
+
+                    </a>
+                </div>
+                <div className="flex items-end justify-center">
+                    <p className='text-xl '>
+                        Crafted with  ❤️   by siddanth
+
+                    </p>
+                </div>
             </div>
 
         </>

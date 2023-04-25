@@ -16,7 +16,7 @@
 }
 
 .underline-effect {
-  color: black;
+  color: gray;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 1px;
@@ -32,7 +32,7 @@
   bottom: -7px;
   /* left: 50%; */
   position: absolute;
-  background: black;
+  background: gray;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 100%;
 }
@@ -47,14 +47,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: #e5e5f7;
-  opacity: 1;
+ /* background-color: #e5e5f7;
+   opacity: 1;
   background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
-  background-size: 10px 10px;
+  background-size: 10px 10px; */
 
- /* background:#7525e2; */
-   /* background-size: 180% 180%;
-  animation: gradient-animation 6s ease infinite; */
+  background-color: #15202B;
+  /* background-image: url("./MyComponents/assets/bg-1.jpeg"); */
+background-attachment: fixed ;  
+
+
+
 }
 
 code {
@@ -65,15 +68,33 @@ code {
 .middle {
   width: 100;
   height: 100vh;
-  background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
+  /* background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
   background-size: 180% 180%;
-  animation: gradient-animation 6s ease infinite;
+  animation: gradient-animation 6s ease infinite; */ 
+}
+
+nav {
+
+}
+
+.intro-div {
+ 
+  position: relative;
+  top:9%;
+}
+
+.img-div-1 {
+  position: relative;
+  top:9%;
 }
 
 
 .logo-name  {
   font-family:monospace;
   line-height: normal;
+  background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 /* 3d blue button css */
 .pushable {
@@ -103,8 +124,9 @@ code {
   height: 504px;
   border-radius: 20px;
   padding: 5px;
-  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-  background-image: linear-gradient(144deg, #000000, #000000 50%, #000000);
+  box-shadow: rgba(173, 100, 255, 0.2) 0 15px 30px -5px;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+
   transition: 0.3s;
 }
 
@@ -130,7 +152,7 @@ code {
   }
   
   .nameclass {
-    font-size: x-large;
+    font-size: xx-large;
   }
   .logo-name{
     font-size: 15px;
@@ -138,7 +160,7 @@ code {
   }
 
   .pushable {
-    width: 60px;
+    width: 70px;
     height: 40px;
     background: hsl(234, 100%, 27%);
     border-radius: 10px;
@@ -151,7 +173,7 @@ code {
     display: block;
     padding: 10px;
     border-radius: 12px;
-    font-size: 12px;
+    font-size: 13px;
     background: hsl(229, 100%, 55%);
     color: white;
     transform: translateY(-6px);
@@ -169,20 +191,19 @@ code {
   .middle {
     width: 100;
     height: 100;
-   
-   
+
   }
   .card {
     height: 500px;
     width: 360px;
-    position: relative;
-    top: 20%;
+    /* position: relative;
+    top: 20%; */
   }
 
   .intro-div {
     width: 100%;
     /* position: relative;
-    left: 8px; */
+    top:30%; */
   }
 
   .img-div-1 {
@@ -198,17 +219,29 @@ code {
    height: 100%;
    width: 100%;
   }
-.card-2 {
-  
+
+nav {
+  /* background-color: white; */
+  color: black;
 }
 
-.scroll-downs {
- 
+nav button {
+ /* display: none; */
 }
- 
+
+.skills-divlist li p{
+  font-size: 13px;
+}
+
+nav .header-items {
+  background-color: black;
+}
+
+}
 
 
-}
+
+
 
 
 
@@ -478,3 +511,17 @@ li {
 a {
 	text-decoration: none;
 }
+
+
+
+.fa-brands,.fab,.fas{
+  font-size:5rem;
+  color: #868e96;
+}
+
+
+.fa-brands:hover , .fab:hover , .fas:hover {
+color: #0070ef;
+
+}
+

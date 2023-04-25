@@ -16,14 +16,14 @@ const Middle = () => {
         <>
 
 
-            <div class="middle flex flex-col w-screen  h-screen  ">
+            <div class="middle  grid w-screen  h-screen  ">
 
                 <div className="flex w-screen md:flex-row">
-                    <div class="intro-div flex w-1/2 items-center  justify-center">
+                    <div class="intro-div flex w-1/2 items-center justify-center">
                         <div class="card w-2/3 p-10 mr-3   " >
                             <div className="card__content flex flex-col justify-start items-center">
                                 <h1 class="heading-span  text-2xl font-bold mb-4 text-center">
-                                    <span class="nameclass "  >HEY, I'M SIDDANTH REDDY</span>
+                                    <span class="nameclass  " >HEY, I'M SIDDANTH REDDY</span>
                                 </h1>
                                 <p class="text-md font-mono text-blue-500 mb-6 text-center mt-3">
                                     I design and code beautifully simple things, and I love what I do.
@@ -104,7 +104,6 @@ const Middle = () => {
                                 </div>
                             </div>
                         </div>
-
                     </div>
 
                     <div class="img-div-1 w-1/2 flex justify-center items-center">
@@ -123,7 +122,6 @@ const Middle = () => {
                     </div>
                 </div>
 
-                <Header />
 
             </div>
         </>
