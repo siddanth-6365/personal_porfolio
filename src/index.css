@@ -80,12 +80,12 @@ nav {
 .intro-div {
  
   position: relative;
-  top:9%;
+  top:11%;
 }
 
 .img-div-1 {
   position: relative;
-  top:9%;
+  top:13%;
 }
 
 
@@ -124,8 +124,8 @@ nav {
   height: 504px;
   border-radius: 20px;
   padding: 5px;
-  box-shadow: rgba(173, 100, 255, 0.2) 0 15px 30px -5px;
-  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  box-shadow: rgba(173, 100, 255, 0.2) 0 2px 29px 7px;
+  /* background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb); */
 
   transition: 0.3s;
 }
@@ -250,17 +250,15 @@ nav .header-items {
 
 
 .card__content {
-  color: black;
+  /* color: black; */
   justify-content: center;
-  background: white;
+  /* background: white; */
   border-radius: 17px;
   width: 100%;
   height: 100%;
   padding: 20px;
 }
-.card:hover {
-  scale: 1.1;
-}
+
 
 /* project.js card css */
 
@@ -306,8 +304,8 @@ nav .header-items {
   width: 60px;
   height: 60px;
   outline: none;
-  border: none;
-  background: blac;
+  border: 2px solid #cc39a4;
+  /* background: black; */
   border-radius: 90px 5px 5px 5px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -318,6 +316,7 @@ nav .header-items {
   margin-top: 10px;
   margin-left: 1.2em;
   fill: #cc39a4;
+  
 }
 
 .card2 {
@@ -325,7 +324,8 @@ nav .header-items {
   height: 60px;
   outline: none;
   border: none;
-  background: white;
+  border: 2px solid #03a9f4;
+  /* background: ; */
   border-radius: 5px 90px 5px 5px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -342,12 +342,14 @@ nav .header-items {
   width: 60px;
   height: 60px;
   outline: none;
-  border: none;
-  background: white;
+  border: 2px solid white;
+
+  /* background: white; */
   border-radius: 5px 5px 5px 90px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition: 0.2s ease-in-out;
+  fill: white;
 }
 
 .github {
@@ -359,18 +361,19 @@ nav .header-items {
   width: 60px;
   height: 60px;
   outline: none;
-  border: none;
-  background: white;
+  border: 2px solid #0070ef;
+  /* background: #8c9eff; */
+
   border-radius: 5px 5px 90px 5px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition: 0.2s ease-in-out;
 }
 
-.discord {
-  margin-top: -0.9em;
-  margin-left: 10px;
-  fill: #8c9eff;
+.linkedin {
+  /* margin-top: -0.9em; */
+  margin-left: -3px; 
+  fill: #0070ef;
 }
 
 .card1:hover {
@@ -390,17 +393,19 @@ nav .header-items {
 }
 
 .card2:hover .twitter {
-  fill: white;
+  fill: black;
 }
 
 .card3:hover {
   cursor: pointer;
   scale: 1.1;
-  background-color: black;
+
+  background-color: white;
 }
 
 .card3:hover .github {
-  fill: white;
+  fill: black;
+
 }
 
 .card4:hover {
@@ -409,8 +414,8 @@ nav .header-items {
   background-color: #0070ef;
 }
 
-.card4:hover .discord {
-  fill: white;
+.card4:hover .linkedin {
+  fill: black;
 }
 
 /**/

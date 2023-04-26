@@ -3,26 +3,71 @@ import "flowbite";
 import { useState, useEffect } from "react";
 
 const Header = () => {
-  const [navbar, setNavbar] = useState(
-    "bg-white fixed  bottom-0  w-full z-20 shadow-2xl left-0"
-  );
+  // const [navbar, setNavbar] = useState(
+  //   "bg-white fixed  bottom-0  w-full z-20 shadow-2xl left-0"
+  // );
 
-  useEffect(() => {
-    changeBackground();
-    window.addEventListener("scroll", changeBackground);
-  });
-  const changeBackground = () => {
-    console.log(window.scrollY);
-    if (window.scrollY >= 60) {
-      setNavbar("bg-white fixed text-black  top-0  w-full z-20 shadow-2xl left-0");
-    } else {
-      setNavbar("   fixed  top-0  w-full z-20 shadow-2xl left-0");
+  // useEffect(() => {
+  //   changeBackground();
+  //   window.addEventListener("scroll", changeBackground);
+  // });
+  // const changeBackground = () => {
+  //   console.log(window.scrollY);
+  //   if (window.scrollY >= 60) {
+  //     setNavbar("bg-white fixed text-black  top-0  w-full z-20 shadow-2xl left-0");
+  //   } else {
+  //     setNavbar("   fixed  top-0  w-full z-20 shadow-2xl left-0");
+  //   }
+  // };
+
+  const [show, setShow] = useState(false);
+  const [navclass, setnavclass] = useState(
+    "max-w-screen bg-black backdrop-blur-20  fixed text-black  top-0  w-full z-20 shadow-lg left-0  flex flex-wrap items-center justify-between mx-auto p-5"
+  );
+  const [lastScrollY, setLastScrollY] = useState(true);
+
+  const controlNavbar = () => {
+    if (typeof window !== "undefined") {
+      if (window.scrollY > lastScrollY) {
+        // if scroll down hide the navbar
+        setShow(true);
+        setnavclass(
+          "max-w-screen bg-black/50 backdrop-blur-20  fixed text-black  top-0  w-full z-20 shadow-lg left-0  flex flex-wrap items-center justify-between mx-auto p-5"
+        );
+      } else {
+        // if scroll up show the navbar
+        setShow(false);
+        setnavclass(
+          "max-w-screen bg-white   fixed text-black  top-0  w-full z-20 shadow-lg left-0  flex flex-wrap items-center justify-between mx-auto p-4"
+        );
+      }
+      // remember current page location to use in the next move
+      setLastScrollY(window.scrollY);
     }
   };
+  const checknavbar = () => {
+    if (window.scrollY === 0) {
+      setnavclass(
+        "max-w-screen bg-black backdrop-blur-20  fixed text-black  top-0  w-full z-20 shadow-lg left-0  flex flex-wrap items-center justify-between mx-auto p-4"
+      );
+    }
+  };
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", controlNavbar);
+      checknavbar();
+      // cleanup function
+      return () => {
+        window.removeEventListener("scroll", controlNavbar);
+      };
+    }
+  }, [lastScrollY]);
+
   return (
     <>
-      <nav className={navbar}>
-        <div className="max-w-screen-xl  flex flex-wrap items-center justify-between mx-auto p-4">
+      {/* <nav className={navbar}> */}
+      <nav className={`active ${show && "hidden"}`}>
+        <div className={navclass}>
           <a href="#" className="flex items-center">
             <img
               class="w-10 h-10 p-1 mr-3 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
@@ -80,7 +125,7 @@ const Header = () => {
             id="navbar-sticky"
           >
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border  border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0  ">
-              <li >
+              <li>
                 <a
                   href="# "
                   className="block py-2 pl-3 pr-4 text-blue-700 rounded  md:text-blue-700 md:p-0 "
