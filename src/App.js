@@ -1,7 +1,7 @@
 import Header from "./MyComponents/Header";
 import Middle from "./MyComponents/Middle";
 import Aboutme from "./MyComponents/Aboutme";
-import BottomNavbar from "./MyComponents/BottomNavbar";
+
 
 import "./index.css"
 
@@ -24,7 +24,7 @@ function App() {
 
       <Form />
 
-      {/* <BottomNavbar /> */}
+
     </>
   );
 }

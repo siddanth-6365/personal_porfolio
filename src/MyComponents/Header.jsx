@@ -22,7 +22,7 @@ const Header = () => {
 
   const [show, setShow] = useState(false);
   const [navclass, setnavclass] = useState(
-    "max-w-screen bg-black backdrop-blur-20  fixed text-black  top-0  w-full z-20 shadow-lg left-0  flex flex-wrap items-center justify-between mx-auto p-5"
+    "max-w-screen  backdrop-filter backdrop-blur-lg     fixed text-black  top-0  w-full z-20 shadow-lg left-0  flex flex-wrap items-center justify-between mx-auto p-5"
   );
   const [lastScrollY, setLastScrollY] = useState(true);
 
@@ -32,13 +32,13 @@ const Header = () => {
         // if scroll down hide the navbar
         setShow(true);
         setnavclass(
-          "max-w-screen bg-black/50 backdrop-blur-20  fixed text-black  top-0  w-full z-20 shadow-lg left-0  flex flex-wrap items-center justify-between mx-auto p-5"
+          "w-screen backdrop-filter backdrop-blur-lg   fixed text-black  top-0  w-full z-20 shadow-lg left-0  flex flex-wrap items-center justify-between mx-auto p-5"
         );
       } else {
         // if scroll up show the navbar
         setShow(false);
         setnavclass(
-          "max-w-screen bg-white   fixed text-black  top-0  w-full z-20 shadow-lg left-0  flex flex-wrap items-center justify-between mx-auto p-4"
+          "w-screen bg-gray-100    fixed text-black  top-0  w-full z-20 shadow-lg left-0  flex flex-wrap items-center justify-between mx-auto p-4"
         );
       }
       // remember current page location to use in the next move
@@ -48,7 +48,7 @@ const Header = () => {
   const checknavbar = () => {
     if (window.scrollY === 0) {
       setnavclass(
-        "max-w-screen bg-black backdrop-blur-20  fixed text-black  top-0  w-full z-20 shadow-lg left-0  flex flex-wrap items-center justify-between mx-auto p-4"
+        "w-screen  backdrop-filter backdrop-blur-lg  fixed text-black  top-0  w-full z-20 shadow-lg left-0  flex flex-wrap items-center justify-between mx-auto p-4"
       );
     }
   };
@@ -66,7 +66,7 @@ const Header = () => {
   return (
     <>
       {/* <nav className={navbar}> */}
-      <nav className={`active ${show && "hidden"}`}>
+      <div id="navbar" className={`active ${show && "hidden"}`}>
         <div className={navclass}>
           <a href="#" className="flex items-center">
             <img
@@ -104,7 +104,7 @@ const Header = () => {
               aria-controls="navbar-sticky"
               aria-expanded="false"
             >
-              <span className="sr-only">Open main menu</span>
+              <span className="sr-only ">Open main menu</span>
               <svg
                 className="w-6 h-6"
                 aria-hidden="true"
@@ -121,7 +121,7 @@ const Header = () => {
             </button>
           </div>
           <div
-            className="header-items items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            className="header-items items-center bg-black justify-between hidden w-full md:flex md:w-auto md:order-1"
             id="navbar-sticky"
           >
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border  border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0  ">
@@ -137,7 +137,7 @@ const Header = () => {
               <li>
                 <a
                   href="#about-div"
-                  className="block py-2 pl-3 pr-4 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-white md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 "
+                  className="block py-2 pl-3 pr-4 text-gray-400 rounded  md:hover:text-blue-700 md:p-0  "
                 >
                   About
                 </a>
@@ -153,7 +153,7 @@ const Header = () => {
               <li>
                 <a
                   href="#message-form"
-                  className="block py-2 pl-3 pr-4 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500  dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  className="block py-2 pl-3 pr-4 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500  dark:text-white dark:hover:bg-gray-700 dark:hover:text-white "
                 >
                   Contact
                 </a>
@@ -161,7 +161,7 @@ const Header = () => {
             </ul>
           </div>
         </div>
-      </nav>
+      </div>
     </>
   );
 };
