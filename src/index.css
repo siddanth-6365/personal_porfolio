@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
 .nameclass {
   font-size: xxx-large;
   /* color:  'linear-gradient(334deg, #6b97f7, #7525e2, #f7137e)'; */
@@ -145,8 +148,7 @@ code {
 @media only screen and (max-width: 700px) {
   
   body {
-    overflow-y: auto;
-  scrollbar-gutter: stable;
+  
   }
   
   .nameclass {
@@ -218,6 +220,7 @@ code {
    width: 100%;
   }
 
+  
 
 
 nav button {
