@@ -53,9 +53,8 @@ body {
   background-size: 10px 10px; */
 
   /* background-color: #15202B; */
-  background-image: url("https://shuffle.dev/vendor/shuffle/img/alternatives/bg.png");
+  background-image:  url("https://shuffle.dev/vendor/shuffle/img/alternatives/bg.png");
 background-attachment: fixed ;  
-
 
 
 }
@@ -228,10 +227,10 @@ nav button {
 .skills-divlist li p{
   font-size: 13px;
 }
-/* 
-nav .header-items {
-  background-color: black;
-} */
+
+.header-items ul {
+  background-color: #15202B;
+}
 
 }
 
