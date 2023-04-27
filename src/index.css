@@ -55,9 +55,12 @@ body {
   background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
   background-size: 10px 10px; */
 
-  /* background-color: #15202B; */
+  background-color: #00003D;
+  /* background-image:  url("./MyComponents/assets/bgtry2.jpg"); */
   /* background-image:  url("https://shuffle.dev/vendor/shuffle/img/alternatives/bg.png"); */
-  background-image:  url("./MyComponents/assets/bgtry2.jpg");
+
+/* background-size: cover; */
+/* background-repeat: no-repeat; */
 background-size: 100%;
 background-attachment: fixed ;  
 
@@ -150,8 +153,10 @@ code {
 @media only screen and (max-width: 700px) {
   
   body {
-    background-image:  url("./MyComponents/assets/bgtry2.jpg");
+    /* background-image:  url("./MyComponents/assets/bgtry2.jpg"); */
 /* background-repeat: no-repeat; */
+ /* background-color: #e5e5f7; */
+
 background-size: cover;
 background-attachment: fixed ;  
   }
