@@ -56,7 +56,9 @@ body {
   background-size: 10px 10px; */
 
   /* background-color: #15202B; */
-  background-image:  url("https://shuffle.dev/vendor/shuffle/img/alternatives/bg.png");
+  /* background-image:  url("https://shuffle.dev/vendor/shuffle/img/alternatives/bg.png"); */
+  background-image:  url("./MyComponents/assets/bgtry2.jpg");
+background-size: 100%;
 background-attachment: fixed ;  
 
 
@@ -148,7 +150,10 @@ code {
 @media only screen and (max-width: 700px) {
   
   body {
-  
+    background-image:  url("./MyComponents/assets/bgtry2.jpg");
+/* background-repeat: no-repeat; */
+background-size: cover;
+background-attachment: fixed ;  
   }
   
   .nameclass {
