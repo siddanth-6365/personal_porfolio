@@ -71,7 +71,7 @@ const Header = () => {
           <a href="#" className="flex items-center">
             <img
               class="w-10 h-10 p-1 mr-3 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
-              src="https://media.licdn.com/dms/image/D5603AQGYQoVDjRxcew/profile-displayphoto-shrink_800_800/0/1675652136606?e=1687392000&v=beta&t=UaXHCAGEz_pzXPK14NOLg3Ug3iW0I3uTRz7nM7q3Juw"
+              src={require("./assets/photo_6224083313795118721_y.jpg")}
               alt="Bordered avatar"
             />
 

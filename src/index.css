@@ -55,12 +55,13 @@ body {
   background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
   background-size: 10px 10px; */
 
-  background-color: #00003D;
+  /* background-color: #00003D; */
   /* background-image:  url("./MyComponents/assets/bgtry2.jpg"); */
   /* background-image:  url("https://shuffle.dev/vendor/shuffle/img/alternatives/bg.png"); */
 
 /* background-size: cover; */
 /* background-repeat: no-repeat; */
+background-color: rgb(15 23 42);
 background-size: 100%;
 background-attachment: fixed ;  
 
