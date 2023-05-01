@@ -91,7 +91,7 @@ code {
 
 .img-div-1 {
   position: relative;
-  top:13%;
+  top:8%;
 }
 
 
@@ -132,9 +132,10 @@ code {
   padding: 5px;
   box-shadow: rgba(173, 100, 255, 0.2) 0 2px 29px 12px;
   /* background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb); */
-  background: #01002a;
+  background: #03002e;
 
   transition: 0.3s;
+  animation: slideRight 1s ease forwards;
 }
 
 
@@ -170,8 +171,16 @@ background-attachment: fixed ;
     
   }
 
+  .side-img{
+    animation: animate 5s ease-in-out infinite 3s;
+    height: 500px;
+    width: 500px;
+  }
+
   .pushable {
-    width: 70px;
+    position: relative;
+    left: -5%;
+    width: 60px;
     height: 40px;
     background: hsl(234, 100%, 27%);
     border-radius: 10px;
@@ -244,11 +253,32 @@ nav button {
 
 .header-items ul {
   background-color: #15202B;
+ 
 }
 
 }
 
 
+
+.header-items a , .logo-name {
+  animation: slideBottom 1s ease forwards;
+  animation-delay: calc(.2s * var(--i));
+}
+.pushable-header {
+  animation: slideBottom 1s ease forwards;
+  animation-delay: calc(.2s * var(--i));
+}
+@keyframes slideBottom{
+  from{
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  
+  to{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 
 
 
@@ -536,6 +566,57 @@ a {
 
 .fa-brands:hover , .fab:hover , .fas:hover {
 color: #0070ef;
+text-shadow: 0 0 40px #0070ef;
 
 }
+
+
+.side-img{
+  animation: animate 5s ease-in-out infinite 3s;
+  /* height: 500px;
+  width: 500px; */
+}
+
+@keyframes animate{
+  0%{
+    transform: translateY(0);
+  }
+  
+  50%{
+    transform: translateY(50px);
+  }
+  
+  100%{
+    transform: translateY(0);
+  }
+}
+
+/* 
+a:hover{
+  text-shadow: 0 0 40px #0070ef;
+  color: #0070ef;
+} */
+
+
+#message-form svg {
+  height: 100%;
+  width: 100%;
+  animation: animate 5s ease-in-out infinite 3s;
+
+ }
+
+
+
+ @keyframes slideRight{
+  from{
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  
+  to{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
 

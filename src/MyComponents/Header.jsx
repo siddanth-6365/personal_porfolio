@@ -84,7 +84,7 @@ const Header = () => {
           <div className="flex md:order-2">
             <button
               type="button"
-              className="pushable text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="pushable pushable-header text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               <span class="front">
                 {" "}
@@ -127,7 +127,7 @@ const Header = () => {
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border  border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0  ">
               <li>
                 <a
-                  href="# "
+                  href="# " 
                   className="block py-2 pl-3 pr-4 text-blue-700 rounded  md:text-blue-700 md:p-0 "
                   aria-current="page"
                 >
@@ -135,7 +135,7 @@ const Header = () => {
                 </a>
               </li>
               <li>
-                <a
+                <a  
                   href="#about-div"
                   className="block py-2 pl-3 pr-4 text-gray-400 rounded  md:hover:text-blue-700 md:p-0  "
                 >
@@ -143,7 +143,7 @@ const Header = () => {
                 </a>
               </li>
               <li>
-                <a
+                <a  
                   href="#project-area"
                   className="block py-2 pl-3 pr-4 text-gray-400 rounded  md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 "
                 >
@@ -152,7 +152,7 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  href="#message-form"
+                  href="#message-form"  
                   className="block py-2 pl-3 pr-4 text-gray-400 rounded  md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500  dark:text-white dark:hover:bg-gray-700 dark:hover:text-white "
                 >
                   Contact
