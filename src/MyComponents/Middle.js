@@ -109,7 +109,7 @@ const Middle = () => {
                     <div class="img-div-1 w-1/2 flex justify-center items-center">
                         <div class="svg-div w-1/3 h-1/2  ">
                             <img src={require('./assets/Boy attending online classes - 2004x1500.png')} alt="web designer" class="side-img w-full h-full  mx-auto" />
-                            {/* <img src="https://rvs-fiber-landing-page.vercel.app/Assets/hero-Illustration.png" alt="web designer" class="side-img w-full   mx-auto" /> */}
+                            {/* <img src="https://oasisinfobyte.com/image/Website%20designer.svg" alt="web designer" class="side-img w-full   mx-auto" /> */}
 
                         </div>
                     </div>

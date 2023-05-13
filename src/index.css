@@ -259,7 +259,7 @@ nav button {
 }
 
 
-
+/* 
 .header-items a , .logo-name {
   animation: slideBottom 1s ease forwards;
   animation-delay: calc(.2s * var(--i));
@@ -267,7 +267,7 @@ nav button {
 .pushable-header {
   animation: slideBottom 1s ease forwards;
   animation-delay: calc(.2s * var(--i));
-}
+} */
 @keyframes slideBottom{
   from{
     transform: translateY(-50px);
@@ -572,9 +572,10 @@ text-shadow: 0 0 40px #0070ef;
 
 
 .side-img{
-  animation: animate 5s ease-in-out infinite 3s;
+  /* animation: animate 5s ease-in-out infinite 3s; */
   /* height: 500px;
   width: 500px; */
+  /* padding-top: 20px; */
 }
 
 @keyframes animate{

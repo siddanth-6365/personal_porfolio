@@ -26,7 +26,7 @@ const AboutSection = () => {
     <>
 
       <body class="  antialiased" id="about-div" >
-        <div class="max-w-screen-xl px-4 py-8 mx-auto   lg:px-6 sm:py-16 lg:py-24"  >
+        <div class="aboutmediv max-w-screen-xl px-4 py-8 mx-auto   lg:px-6 sm:py-16 lg:py-24"  >
           <div  class="max-w-2xl   mx-auto text-center">
             <h1 class="text-5xl font-extrabold leading-tight tracking-tight   sm:text-4xl ">
               <a className="underline-effect" href="#about" >
@@ -96,17 +96,7 @@ const AboutSection = () => {
         </div>
 <Skillslist/>
       </body>
-      {/* fixed div  */}
-
-      {/* <div class="flex sticky items-end justify-end bottom-0 right-0 mr-4 mb-5 z-10">
-                <div>
-                    <a href='#'  >   <lord-icon
-                           src="https://cdn.lordicon.com/albqovim.json"
-                        trigger="loop"
-                        style={fixediconstyle}>
-                    </lord-icon> </a>
-                </div>
-            </div> */}
+    
 
 
     </>
