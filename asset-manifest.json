@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/personal_porfolio/static/css/main.1406a406.css",
+    "main.js": "/personal_porfolio/static/js/main.3db7dc49.js",
+    "static/js/651.a543a249.chunk.js": "/personal_porfolio/static/js/651.a543a249.chunk.js",
+    "static/media/Boy attending online classes - 2004x1500.png": "/personal_porfolio/static/media/Boy attending online classes - 2004x1500.8d150b658e2a4898dd4b.png",
+    "static/media/proimg1.png": "/personal_porfolio/static/media/proimg1.724710e592f1b69b986e.png",
+    "static/media/photo__y.jpg": "/personal_porfolio/static/media/photo_6224083313795118721_y.25c33fc4534d7ca8c2e3.jpg",
+    "static/media/proimg2.png": "/personal_porfolio/static/media/proimg2.9ba52a23d336ec940c47.png",
+    "index.html": "/personal_porfolio/index.html",
+    "main.1406a406.css.map": "/personal_porfolio/static/css/main.1406a406.css.map",
+    "main.3db7dc49.js.map": "/personal_porfolio/static/js/main.3db7dc49.js.map",
+    "651.a543a249.chunk.js.map": "/personal_porfolio/static/js/651.a543a249.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1406a406.css",
+    "static/js/main.3db7dc49.js"
+  ]
+}
